@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+
+    <h1>Gradient Tool</h1>
+    <p>Adjust color A and color B by changing the slider values!</p>
+<div>
+  <p>Color A</p>
+  <label>R</label>
+    <input id="arInput" type="range" min="0" max="255" step="1" value="0"/>
+  <label>G</label>
+    <input id="agInput" type="range" min="0" max="255" step="1" value="0"/>
+  <label>B</label>
+    <input id="abInput" type="range" min="0" max="255" step="1" value="0"/>
+</div>
+    <div>
+      <p>
+        Color B
+      </p>
+      <label>R</label>
+    <input id="brInput" type="range" min="0" max="255" step="1" value="0"/>
+      <label>G</label>
+    <input id="bgInput" type="range" min="0" max="255" step="1" value="0"/>
+      <label>B</label>
+    <input id="bbInput" type="range" min="0" max="255" step="1" value="0"/>
+    </div>
+    <br>
+    <button id="downloadButton">Save</button>
+    <script src="sketch.js"></script>
+    <script src="tool.js"></script>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
