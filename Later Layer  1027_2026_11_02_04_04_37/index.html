@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <header>
+      <button type="button" id="unit-toggle">Switch to °F</button>
+      <h1>Later Layer</h1>
+      <p>Dress for later.</p>
+    </header>
+    <main>
+      <section>
+        <h2>Plan your day!</h2>
+        <div class="time-group">
+        <label for="leave-time">When are you leaving?</label>
+<select id="leave-hour" aria-label="Leaving hour">
+</select>
+          :
+          <select id="leave-minute" aria-label="Leaving minute">
+</select>
+        </div>
+        <div class="time-group">
+        <label for="return-time">When will you be outside again?</label>
+        <select id="return-hour" aria-label="Returning hour">
+</select>
+          :
+        <select id="return-minute" aria-label="Returning minute">
+</select>
+        </div>
+<div class="time-group">
+<label for="return-day">Which day?</label>
+<select id="return-day">
+  <option value="today">Same day</option>
+  <option value="tomorrow">Next day</option>
+</select>
+          
+        </div>
+        <button type="button" id="check-temperature">Check Temperature!</button>
+      </section>
+
+<section id="temperature-results">
+  <h2>Your Forecast</h2>
+  <div class="temperature-pair">
+    <div>
+  <h3>Leaving</h3>
+  <p id="leaving-temp">--°C</p>
+  </div>
+    <div>
+    <h3>Outside Again</h3>
+  <p id="returning-temp">--°C</p>
+      </div>
+  </div>
+      <h3 id="difference-heading">Temperature Difference</h3>
+  <p id="temp-difference">--°C</p>
+        <h3 id="wear-heading">What to Wear</h3>
+  <p id="clothing-advice">Your clothing advice here</p>
+</section>
+      
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
